@@ -1,4 +1,7 @@
 def chunk(text, size=800, overlap=200):
+    if overlap >= size:
+        raise ValueError("Overlap must be smaller than size.")
+        
     chunks = []
     start = 0
     
