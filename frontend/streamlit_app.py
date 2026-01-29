@@ -23,5 +23,10 @@ if st.button("Analyze") and resume and jd:
             data=data
         )
         
+        if response.status_code ==200:
+            st.json(response.json())
+        else:
+            st.error(f"Error: {response.status_code} - {response.text}")
+        
 
     st.json(response.json())
