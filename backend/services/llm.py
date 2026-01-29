@@ -24,4 +24,9 @@ def call_local_llm(prompt: str):
         }
 
 def call_llm(prompt):
-    return call_local_llm(prompt)
+    if USE_SAGEMAKER:
+        #upgrade later using sagemaker
+        #call_sagemaker_llm(prompt)
+        pass
+    else:
+        return call_local_llm(prompt)
