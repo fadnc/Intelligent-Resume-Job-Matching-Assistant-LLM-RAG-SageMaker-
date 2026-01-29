@@ -1,6 +1,6 @@
 from sentence_transformers import SentenceTransformer
 import numpy as np
-from config import EMBED_MODEL
+from backend.config import EMBED_MODEL
 
 model = SentenceTransformer(EMBED_MODEL)
 

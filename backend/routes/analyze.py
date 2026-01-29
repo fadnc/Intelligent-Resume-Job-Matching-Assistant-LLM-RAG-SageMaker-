@@ -1,5 +1,5 @@
 from fastapi import APIRouter, UploadFile, File, Form
-from services.pipeline import analyze_resume
+from backend.services.pipeline import analyze_resume
 
 router = APIRouter()
 
