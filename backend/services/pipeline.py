@@ -24,7 +24,7 @@ async def analyze_resume(resume_file, job_text):
     
     context = "\n".join(top_chunks)
     
-    #s5 llm prompt
+    #s5 llm prompting
     prompt = PROMPT_TEMPLATE.format(
         resume=context,
         jd=job_text
