@@ -1,7 +1,7 @@
 import faiss
 import hashlib
 import numpy as np
-from config import FAISS_PATH, META_PATH
+from backend.config import FAISS_PATH, META_PATH
 
 _INDEX_CACHE = {}
 
